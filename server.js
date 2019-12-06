@@ -14,11 +14,6 @@ const options = {
     methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   };
 
-const koaOptions = {
-    origin: true,
-    credentials: true
-};
-
 router.use(async (ctx, next) => {
     ctx.set('Access-Control-Allow-Credentials', 'true');
     ctx.set('Access-Control-Allow-Origin', '*');
